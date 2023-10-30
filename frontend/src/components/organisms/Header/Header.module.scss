@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  height: 80px;
+  z-index: 100;
+  background-color: rgb(0 0 0 / 53%);
+  box-shadow: 0px 5px 20px 3px #000000;
+  backdrop-filter: blur(28px);
+  box-shadow: 0 0 20px #010102;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0px 1px 5px #379df089;
+}
+
+.search {
+  svg {
+    width: 20px;
+    height: 20px;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  fieldset {
+    color: white;
+    border-color: white;
+
+    &:hover {
+      border-color: red !important;
+    }
+  }
+  input {
+    color: #f9f9f9;
+    font-size: 16px;
+  }
+
+  .textField {
+    border-color: red !important;
+
+    &:hover {
+      border-color: red !important;
+    }
+  }
+}
