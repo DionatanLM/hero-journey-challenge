@@ -38,7 +38,11 @@ const HeroCard = ({ id, name, powerstats, image, ...rest }) => {
           variant="h7"
           component="div"
           color={'#fff'}
-          sx={{ textAlign: 'center', width: '157px' }}
+          sx={{
+            textAlign: 'center',
+            width: '157px',
+            fontFamily: 'Roboto, sans serif'
+          }}
         >
           {name}
         </Typography>
@@ -47,7 +51,8 @@ const HeroCard = ({ id, name, powerstats, image, ...rest }) => {
           color={'#fff'}
           sx={{
             display: 'flex',
-            alignItems: 'center'
+            alignItems: 'center',
+            fontFamily: 'Roboto, sans serif'
           }}
         >
           <SwordIcon /> {totalPowerstats}
