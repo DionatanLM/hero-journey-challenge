@@ -27,6 +27,7 @@ const HeroList = ({ heroes }) => {
   const [snackBarOpen, setSnackBarOpen] = useState(false)
   const [selectedHeroName, setSelectedHeroName] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
+  const [lastValidPage, setLastValidPage] = useState(1)
 
   const { selectedHeroes, winner, selectHero } = useHero()
   const [opponent1, opponent2] = selectedHeroes
@@ -57,8 +58,16 @@ const HeroList = ({ heroes }) => {
     })
   }
 
-  const lastIndex = currentPage * ITEMS_PER_PAGE
-  const firstIndex = lastIndex - ITEMS_PER_PAGE
+  const lastFilteredPage = Math.ceil(filteredHeroes.length / ITEMS_PER_PAGE)
+  if (lastValidPage > lastFilteredPage) {
+    setLastValidPage(lastFilteredPage)
+  }
+
+  const validatedPage =
+    currentPage > lastFilteredPage ? lastFilteredPage : currentPage
+
+  const firstIndex = (validatedPage - 1) * ITEMS_PER_PAGE
+  const lastIndex = validatedPage * ITEMS_PER_PAGE
   const currentHeroes = filteredHeroes.slice(firstIndex, lastIndex)
   const isMobile = useMediaQuery('(max-width:900px)')
 
