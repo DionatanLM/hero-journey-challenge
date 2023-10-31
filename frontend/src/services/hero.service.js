@@ -11,7 +11,6 @@ const getAllHeroes = async () => {
     const data = await response.json()
     return data
   } catch (error) {
-    // Trate os erros aqui conforme necessário
     console.error('Erro ao obter os heróis:', error)
     throw error
   }

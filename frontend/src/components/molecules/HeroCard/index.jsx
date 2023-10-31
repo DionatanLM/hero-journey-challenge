@@ -35,13 +35,13 @@ const HeroCard = ({ id, name, powerstats, image, ...rest }) => {
       >
         <Typography
           gutterBottom
-          variant="h7"
-          component="div"
+          variant="h6"
           color={'#fff'}
           sx={{
             textAlign: 'center',
             width: '157px',
-            fontFamily: 'Roboto, sans serif'
+            fontSize: '1rem',
+            fontWeight: '400'
           }}
         >
           {name}
@@ -51,8 +51,7 @@ const HeroCard = ({ id, name, powerstats, image, ...rest }) => {
           color={'#fff'}
           sx={{
             display: 'flex',
-            alignItems: 'center',
-            fontFamily: 'Roboto, sans serif'
+            alignItems: 'center'
           }}
         >
           <SwordIcon /> {totalPowerstats}

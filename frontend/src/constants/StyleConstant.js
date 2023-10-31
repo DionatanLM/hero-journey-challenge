@@ -1,4 +1,4 @@
-import { InputBase, styled } from "@mui/material"
+import { InputBase, styled } from '@mui/material'
 
 export const cardStyles = (boxShadowColor, isSelected) => ({
   width: 176,
@@ -31,15 +31,15 @@ export const cardStyles = (boxShadowColor, isSelected) => ({
 
 export const styleBoxShadowColor = total => {
   if (total <= 250) {
-    return '#A9A9A9' // cinza para valores menores ou iguais a 250
+    return '#A9A9A9'
   } else if (total > 250 && total <= 350) {
-    return '#17c700' // verde para valores entre 250 e 350
+    return '#17c700'
   } else if (total > 350 && total <= 500) {
-    return '#9400D3' // roxo para valores entre 350 e 500
+    return '#9400D3'
   } else if (total > 500 && total <= 550) {
-    return '#FF8C00' // laranja para valores entre 500 e 550
+    return '#FF8C00'
   } else {
-    return '#FF0000' // vermelho para valores acima de 550
+    return '#FF0000'
   }
 }
 

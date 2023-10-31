@@ -17,7 +17,7 @@ const StatComparison = ({ opponent1, opponent2 }) => (
             ) : opponent1.powerstats[stat] < opponent2.powerstats[stat] ? (
               <ArrowDropDownIcon sx={{ color: 'red' }} />
             ) : (
-              <FiberManualRecordIcon sx={{ color: '#ece400', fontSize: 12 }} /> // Adicione o ícone aqui
+              <FiberManualRecordIcon sx={{ color: '#ece400', fontSize: 12 }} /> 
             )}
           </Typography>
         ))}
@@ -45,7 +45,7 @@ const StatComparison = ({ opponent1, opponent2 }) => (
             ) : opponent2.powerstats[stat] < opponent1.powerstats[stat] ? (
               <ArrowDropDownIcon sx={{ color: 'red' }} />
             ) : (
-              <FiberManualRecordIcon sx={{ color: '#ece400', fontSize: 12 }} /> // Adicione o ícone aqui
+              <FiberManualRecordIcon sx={{ color: '#ece400', fontSize: 12 }} />
             )}{' '}
             {opponent2.powerstats[stat]}
           </Typography>

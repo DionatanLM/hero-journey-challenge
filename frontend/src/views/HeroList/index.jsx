@@ -78,7 +78,7 @@ const HeroList = ({ heroes }) => {
         <Fade in={true} timeout={200}>
           <Box className={styles.page}>
             <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-              <Typography className={styles.actionText}>
+              <Typography variant="body2" className={styles.actionText}>
                 <HeroIcon /> Escolha seus heróis e entre na arena!
               </Typography>
 
