@@ -28,6 +28,7 @@ Executar o aplicativo em modo de desenvolvimento
 - [x] Listagem de heróis
 - [x] Filtro de heróis
 - [x] Sistema de combate
+- [x] Responsivo para tablet e celulares
 
 ## 🔍 Sobre o Projeto
 
