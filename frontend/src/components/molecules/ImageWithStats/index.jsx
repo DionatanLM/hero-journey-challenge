@@ -5,9 +5,14 @@ import styles from '../../organisms/BattleModal/BattleModal.module.scss'
 
 const ImageWithStats = ({ opponent, winnerId, left }) => {
   const isMobile = useMediaQuery('(max-width:900px)')
+
+  const imageLoader = ({ src, width, quality }) => {
+    return `${src}?w=${width}&q=${quality || 75}`
+  }
   return (
     <Box className={[styles.modalContent, left && styles.modalContentLeft]}>
       <Image
+        loader={imageLoader}
         src={isMobile ? opponent?.images?.sm : opponent?.images?.lg}
         width={176}
         height={304}
