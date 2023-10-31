@@ -1,8 +1,5 @@
-import { Inter } from 'next/font/google'
 import './globals.css'
 import Head from 'next/head'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Hero Journey',
@@ -17,9 +14,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#000000" />
       </Head>
 
-      <body className={inter.className} style={{ margin: '0px' }}>
-        {children}
-      </body>
+      <body style={{ margin: '0px' }}>{children}</body>
     </html>
   )
 }
